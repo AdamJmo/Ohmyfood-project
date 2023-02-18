@@ -183,7 +183,10 @@ footer a {
 .menu h1 {
   display: flex;
   justify-content: space-between;
-  margin: 2px 50px 25px 0px;
+  margin: 2px 50px 25px 15px;
+}
+.menu h3 {
+  margin-left: 15px;
 }
 .menu .foods {
   background: white;
@@ -198,8 +201,8 @@ footer a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .menu .foods h3 {
-  margin: 5px 0px;
+  margin: 5px 15px;
 }
 .menu .foods h5 {
-  margin: 5px 0px;
+  margin: 5px 15px;
 }/*# sourceMappingURL=Main.css.map */
