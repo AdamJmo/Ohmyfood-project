@@ -4,6 +4,8 @@ $teritory-color:#00e2d0;
 
 $shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
 
+
+
 a{
     text-decoration: none;
     color: black;
@@ -136,25 +138,45 @@ header {
         font-weight: 300;
         padding-bottom: 20px;
     }
-    .like{
+    .likecontainer{
         font-size: 28px;
         padding-bottom:30px;
         
           
         }
         }
-       
         }
-    .like{
-        i:hover{
-            transform: scale(1);
-            animation-fill-mode: backwards;
-            transition-duration: 2000ms;
-        color: transparent;
-        background-clip: text;
-background-image: linear-gradient($primary-color, $secondary-color);}        
+
        
-    }
+        .filled{
+            opacity: 0;
+            right: 54px;
+        }
+        
+        .holder{
+            font-size: 28px;
+            :hover
+            .filled{
+                position: absolute;
+                
+            }
+        }
+        
+        .holder{
+            :hover{
+            .filled{
+                opacity: 1;
+            }
+            }
+            }
+            .holder{
+                :hover{
+                .open{
+                    opacity: 0;
+                }
+                }
+                }
+
 
     
 
@@ -216,17 +238,112 @@ footer{
             width: 350px;
             border-radius: 10px;
             display: flex;
-            align-items: center;
             flex-direction: row;
             justify-content: space-between;
             margin: 15px 0px;
             box-shadow: $shadow;
-        
+        div{
+            margin: auto 0px;
+        }
              h3{
             margin: 5px 15px;
             }
             h5{
             margin: 5px 15px;
         }
+        p{
+           margin-bottom:-20px;        }
     }
 }
+
+
+        
+            
+                
+                
+            
+        
+
+
+
+
+.foods{
+    animation: .2s ease-in-out both fade-in;
+  }
+  @for $i from 1 through 14 {
+    .foods {
+      &:nth-child(#{$i}) {
+        animation-delay: $i * (.3s);
+      }
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+
+  
+  .card{
+    animation: .5s ease-in-out both fade-in;
+  }
+  @for $i from 1 through 12 {
+    .card {
+      &:nth-child(#{$i}) {
+        animation-delay: $i * (.5s);
+      }
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+
+
+
+/*animation for selecting menu items*/
+
+.pricecontainer{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    .tick{
+       display: none;
+       width:70px;
+       height: 70px;
+          }
+}
+.foods:hover {
+    .tick{
+        display: block;
+    border-radius: 0px 10px 10px 0px;
+    /*opacity: 1;*/
+    /*width: 70px;*/
+    background-color: $teritory-color;
+    /*height: 70px;*/
+    
+    i{
+        display: flex;
+        padding-top: 20px;
+        justify-content: center;
+        filter: invert(100%);
+        font-size: 26px;
+        
+        
+
+    }
+}}
