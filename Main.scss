@@ -244,12 +244,24 @@ footer{
             box-shadow: $shadow;
         div{
             margin: auto 0px;
+            
+        }
+        .okay{
+         
+            overflow: hidden;
+            
         }
              h3{
             margin: 5px 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             }
             h5{
             margin: 5px 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         p{
            margin-bottom:-20px;        }
@@ -327,7 +339,7 @@ footer{
        height: 70px;
           }
 }
-.foods:hover {
+.foods:active {
     .tick{
         display: block;
     border-radius: 0px 10px 10px 0px;

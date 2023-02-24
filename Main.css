@@ -212,11 +212,20 @@ footer a {
 .menu .foods div {
   margin: auto 0px;
 }
+.menu .foods .okay {
+  overflow: hidden;
+}
 .menu .foods h3 {
   margin: 5px 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .foods h5 {
   margin: 5px 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .foods p {
   margin-bottom: -20px;
@@ -366,7 +375,7 @@ footer a {
   height: 70px;
 }
 
-.foods:hover .tick {
+.foods:active .tick {
   display: block;
   border-radius: 0px 10px 10px 0px;
   /*opacity: 1;*/
@@ -374,7 +383,7 @@ footer a {
   background-color: #00e2d0;
   /*height: 70px;*/
 }
-.foods:hover .tick i {
+.foods:active .tick i {
   display: flex;
   padding-top: 20px;
   justify-content: center;
