@@ -148,31 +148,26 @@ header {
         }
 
        
-        .filled{
+        .like{
             opacity: 0;
-            right: 54px;
+            position: absolute;
+            background: linear-gradient(#ff79da, #9356dc);
+            background-clip: text;
+            color:  transparent;  
         }
-        
-        .holder{
-            font-size: 28px;
-            :hover
-            .filled{
-                position: absolute;
-                
-            }
-        }
-        
         .holder{
             :hover{
-            .filled{
+            .like{
                 opacity: 1;
+                transition: opacity 2s;
             }
             }
             }
             .holder{
                 :hover{
-                .open{
+                .heart{
                     opacity: 0;
+                    transition: opacity 2s;
                 }
                 }
                 }

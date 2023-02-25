@@ -132,24 +132,23 @@ p {
   padding-bottom: 30px;
 }
 
-.filled {
+.like {
   opacity: 0;
-  right: 54px;
-}
-
-.holder {
-  font-size: 28px;
-}
-.holder :hover .filled {
   position: absolute;
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 
-.holder :hover .filled {
+.holder :hover .like {
   opacity: 1;
+  transition: opacity 2s;
 }
 
-.holder :hover .open {
+.holder :hover .heart {
   opacity: 0;
+  transition: opacity 2s;
 }
 
 footer {
