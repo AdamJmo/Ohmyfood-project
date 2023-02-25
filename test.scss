@@ -1,0 +1,53 @@
+$primary-color:#9356dc;
+$secondary-color:#ff79da;
+$teritory-color:#00e2d0;
+
+.filled{
+    opacity: 0;
+    background: linear-gradient(#ff79da, #9356dc);
+    background-clip: text;
+    color:  transparent;  
+
+}
+
+.holder{
+    :hover
+    .filled{
+        position: absolute;
+        left: 8px;
+    }
+}
+
+.holder{
+    :hover{
+    .filled{
+        opacity: 1;
+        
+        transition: opacity 3s;
+        
+    }
+    }
+    }
+    .holder{
+        :hover{
+        .open{
+            opacity: 0;
+        }
+        }
+        }
+
+        .pricecontainer{
+            display: flex;
+              justify-content: center;
+              align-items: center;
+              .tick{
+                  opacity: 0.1;
+                  transition:transform width 330ms;
+              }
+          }
+          .tick:hover{
+              opacity: 1;
+              width: 200px;
+              background-color: pink;
+          }
+ 
