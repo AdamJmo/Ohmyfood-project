@@ -36,18 +36,34 @@ $teritory-color:#00e2d0;
         }
         }
 
-        .pricecontainer{
-            display: flex;
-              justify-content: center;
-              align-items: center;
-              .tick{
-                  opacity: 0.1;
-                  transition:transform width 330ms;
-              }
-          }
-          .tick:hover{
-              opacity: 1;
-              width: 200px;
-              background-color: pink;
-          }
- 
+       
+
+        .foods{
+            background:red;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            .pricecontainer{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;}
+                .tick{
+                    padding: 20px;
+                    background: blue;
+                    transition: width 3000ms;
+                    width: 0px;
+                    opacity: 0;
+                   
+                }
+            }
+           
+        
+        .foods:hover{
+            
+            cursor: pointer;
+            .tick{
+                width: 300px;
+                visibility: visible;
+                opacity: 1;
+            }
+        }

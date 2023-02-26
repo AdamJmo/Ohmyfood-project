@@ -20,18 +20,30 @@
   opacity: 0;
 }
 
-.pricecontainer {
+.foods {
+  background: red;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
 }
-.pricecontainer .tick {
-  opacity: 0.1;
-  transition: transform width 330ms;
+.foods .pricecontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foods .tick {
+  padding: 20px;
+  background: blue;
+  transition: width 3000ms;
+  width: 0px;
+  opacity: 0;
 }
 
-.tick:hover {
+.foods:hover {
+  cursor: pointer;
+}
+.foods:hover .tick {
+  width: 300px;
+  visibility: visible;
   opacity: 1;
-  width: 200px;
-  background-color: pink;
 }/*# sourceMappingURL=test.css.map */
