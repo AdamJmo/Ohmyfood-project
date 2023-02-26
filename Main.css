@@ -364,29 +364,76 @@ footer a {
   }
 }
 /*animation for selecting menu items*/
-.pricecontainer {
+/*.pricecontainer{
   display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
+
+    .tick{
+       visibility: hidden;
+       width:70px;
+       height: 70px;
+       transition: width 2s ;
+          }
 }
-.pricecontainer .tick {
-  display: none;
-  width: 70px;
-  height: 70px;
+.foods:hover {
+
+    .tick{
+        cursor: pointer;
+        display: block;
+    border-radius: 0px 10px 10px 0px;
+
+    opacity: 1; 
+
+    background-color: $teritory-color;
+    /*height: 70px;*/
+/*i{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    filter: invert(100%);
+    font-size: 26px;
+
+
+
+}*/
+.foods {
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foods .pricecontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foods .tick {
+  background: #00e2d0;
+  transition: width 300ms ease-in-out;
+  width: 0px;
+  visibility: collapse;
+}
+.foods i {
+  transform: rotate(-360deg);
+  transition: transform 300ms ease-in-out;
 }
 
-.foods:active .tick {
-  display: block;
-  border-radius: 0px 10px 10px 0px;
-  /*opacity: 1;*/
-  /*width: 70px;*/
-  background-color: #00e2d0;
-  /*height: 70px;*/
+.foods:hover {
+  cursor: pointer;
 }
-.foods:active .tick i {
+.foods:hover .tick {
+  width: 70px;
+  visibility: visible;
+  height: 70px;
+  border-radius: 0px 10px 10px 0px;
   display: flex;
-  padding-top: 20px;
+  align-items: center;
   justify-content: center;
+}
+.foods:hover i {
+  padding-left: 5px;
   filter: invert(100%);
   font-size: 26px;
+  transform: rotate(0deg);
 }/*# sourceMappingURL=Main.css.map */

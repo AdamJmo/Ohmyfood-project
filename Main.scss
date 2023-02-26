@@ -325,26 +325,31 @@ footer{
 
 /*animation for selecting menu items*/
 
-.pricecontainer{
+/*.pricecontainer{
   display: flex;
     justify-content: center;
     align-items: center;
+    
     .tick{
-       display: none;
+       visibility: hidden;
        width:70px;
        height: 70px;
+       transition: width 2s ;
           }
 }
-.foods:active {
+.foods:hover {
+
     .tick{
+        cursor: pointer;
         display: block;
     border-radius: 0px 10px 10px 0px;
-    /*opacity: 1;*/
-    /*width: 70px;*/
+    
+    opacity: 1; 
+    
     background-color: $teritory-color;
     /*height: 70px;*/
     
-    i{
+    /*i{
         display: flex;
         padding-top: 20px;
         justify-content: center;
@@ -353,5 +358,45 @@ footer{
         
         
 
+    }*/
+    .foods{
+        background:red;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        .pricecontainer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;}
+            .tick{
+                
+                background: $teritory-color;
+                transition: width 300ms ease-in-out;
+                width: 0px;
+                visibility: collapse;
+            }
+            i{
+                transform: rotate(-360deg);
+                transition: transform 300ms ease-in-out;
+            }
+        }
+    
+    .foods:hover{
+        
+        cursor: pointer;
+        .tick{
+            width: 70px;
+            visibility: visible;
+            height: 70px;
+            border-radius: 0px 10px 10px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        i{
+            padding-left: 5px;
+            filter: invert(100%);
+            font-size: 26px;
+            transform: rotate(0deg);
+        }
     }
-}}
