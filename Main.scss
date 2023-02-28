@@ -3,7 +3,7 @@ $secondary-color:#ff79da;
 $teritory-color:#00e2d0;
 
 $shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
-$shadow2: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);;
+$shadow2: 0 6px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.19);;
 .new-item {
     position: absolute;
     top: 10px;
@@ -66,7 +66,7 @@ header {
     flex-direction: column;
         h1{
              padding-top: 20px;}
-        }
+        
         p{
             padding: 0px 20px;
             text-align: center;
@@ -78,10 +78,13 @@ header {
         height: 50px;
         color: white;
         border-radius: 30px;
-        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
-        background-image: linear-gradient($secondary-color,$primary-color);
+        box-shadow: $shadow;
+        background-image: linear-gradient($secondary-color,$primary-color);}
        
-       }
+        :hover{
+            box-shadow: $shadow2;
+        }
+    }
 
 #howcontainer{
     @extend .display;
@@ -96,7 +99,7 @@ header {
         height:80px;
         background: #f2f2f2;
         border-radius: 20px;
-        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+        box-shadow:$shadow;
         a{
             display:flex;
             align-items:center;
@@ -276,7 +279,8 @@ footer{
             text-overflow: ellipsis;
         }
         p{
-           margin-bottom:-20px;        }
+           margin-bottom:-20px; 
+           padding-right: 20px;       }
     }
 }
 
@@ -337,44 +341,6 @@ footer{
 
 
 
-
-
-/*animation for selecting menu items*/
-
-/*.pricecontainer{
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    .tick{
-       visibility: hidden;
-       width:70px;
-       height: 70px;
-       transition: width 2s ;
-          }
-}
-.foods:hover {
-
-    .tick{
-        cursor: pointer;
-        display: block;
-    border-radius: 0px 10px 10px 0px;
-    
-    opacity: 1; 
-    
-    background-color: $teritory-color;
-    /*height: 70px;*/
-    
-    /*i{
-        display: flex;
-        padding-top: 20px;
-        justify-content: center;
-        filter: invert(100%);
-        font-size: 26px;
-        
-        
-
-    }*/
     .foods{
         background:red;
         display:flex;
@@ -389,30 +355,32 @@ footer{
                 background: $teritory-color;
                 transition: width 300ms ease-in-out;
                 width: 0px;
-                visibility: collapse;
+                height:70px;
+                /*visibility: collapse;*/
+                overflow: hidden;
+                border-radius: 0px 10px 10px 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
             i{
                 transform: rotate(-360deg);
                 transition: transform 300ms ease-in-out;
-            }
-        }
+                overflow: hidden;
+                padding-left: 5px;
+                filter: invert(100%);
+                font-size: 26px;
+                }
+                }
     
     .foods:hover{
         
         cursor: pointer;
         .tick{
             width: 70px;
-            visibility: visible;
-            height: 70px;
-            border-radius: 0px 10px 10px 0px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            visibility: visible;   
         }
         i{
-            padding-left: 5px;
-            filter: invert(100%);
-            font-size: 26px;
             transform: rotate(0deg);
         }
-    }
+        }

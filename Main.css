@@ -25,7 +25,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.display, #restaurants .card, #howcontainer, .btn, #area h4, #area, header {
+.display, #restaurants .card, #howcontainer, #Explore .btn, #area h4, #area, header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,19 +61,20 @@ header a {
 #Explore h1 {
   padding-top: 20px;
 }
-
-p {
+#Explore p {
   padding: 0px 20px;
   text-align: center;
 }
-
-.btn {
+#Explore .btn {
   width: 225px;
   height: 50px;
   color: white;
   border-radius: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-image: linear-gradient(#ff79da, #9356dc);
+}
+#Explore :hover {
+  box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.19);
 }
 
 #howcontainer {
@@ -246,6 +247,7 @@ footer a {
 }
 .menu .foods p {
   margin-bottom: -20px;
+  padding-right: 20px;
 }
 
 .foods {
@@ -380,40 +382,6 @@ footer a {
     transform: scale(1);
   }
 }
-/*animation for selecting menu items*/
-/*.pricecontainer{
-  display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .tick{
-       visibility: hidden;
-       width:70px;
-       height: 70px;
-       transition: width 2s ;
-          }
-}
-.foods:hover {
-
-    .tick{
-        cursor: pointer;
-        display: block;
-    border-radius: 0px 10px 10px 0px;
-
-    opacity: 1; 
-
-    background-color: $teritory-color;
-    /*height: 70px;*/
-/*i{
-    display: flex;
-    padding-top: 20px;
-    justify-content: center;
-    filter: invert(100%);
-    font-size: 26px;
-
-
-
-}*/
 .foods {
   background: red;
   display: flex;
@@ -429,11 +397,21 @@ footer a {
   background: #00e2d0;
   transition: width 300ms ease-in-out;
   width: 0px;
-  visibility: collapse;
+  height: 70px;
+  /*visibility: collapse;*/
+  overflow: hidden;
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .foods i {
   transform: rotate(-360deg);
   transition: transform 300ms ease-in-out;
+  overflow: hidden;
+  padding-left: 5px;
+  filter: invert(100%);
+  font-size: 26px;
 }
 
 .foods:hover {
@@ -442,15 +420,7 @@ footer a {
 .foods:hover .tick {
   width: 70px;
   visibility: visible;
-  height: 70px;
-  border-radius: 0px 10px 10px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .foods:hover i {
-  padding-left: 5px;
-  filter: invert(100%);
-  font-size: 26px;
   transform: rotate(0deg);
 }/*# sourceMappingURL=Main.css.map */
