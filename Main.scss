@@ -4,6 +4,72 @@ $teritory-color:#00e2d0;
 
 $shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
 $shadow2: 0 6px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.19);;
+
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button {
+    @extend.display;
+    width: 225px;
+    height: 50px;
+    color: white;
+    border-radius: 30px;
+    box-shadow: $shadow;
+    background-image: linear-gradient($secondary-color,$primary-color);
+
+}
+
+.btn{
+    @include button;
+}
+
+#ring-container{
+    display: flex;
+    position: absolute;
+}
+
+.lds-dual-ring {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+
+  
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: auto;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: $primary-color $secondary-color;
+    animation: lds-dual-ring 8s infinite ;
+    animation-iteration-count: 1;
+    visibility: hidden;
+    z-index: 0;
+    
+  }
+  @keyframes lds-dual-ring {
+    0% {
+        visibility: visible;
+        z-index: 999;
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(3600deg);
+      
+      
+     
+    
+  }}
+
 .new-item {
     position: absolute;
     top: 10px;
@@ -73,13 +139,8 @@ header {
         }
 
        .btn{
-        @extend.display;
-        width: 225px;
-        height: 50px;
-        color: white;
-        border-radius: 30px;
-        box-shadow: $shadow;
-        background-image: linear-gradient($secondary-color,$primary-color);}
+        @include button;
+    }
        
         :hover{
             box-shadow: $shadow2;
@@ -196,9 +257,9 @@ header {
     
 
 footer{
-    background-color: dimgray;
+    background-color: #353535;
     height:195px;
-    filter: invert(100%);
+   
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -207,9 +268,12 @@ footer{
         height:20px;
         width:100px;
         margin-left: 20px;
+        filter: invert(100%);
     }
     a{
         height:26px;
+        margin-left: 20px;
+        filter: invert(100%);
     }
 
 }
@@ -321,10 +385,10 @@ footer{
   .card{
     animation: .5s ease-in-out both fade-in;
   }
-  @for $i from 1 through 12 {
+  @for $i from 2 through 5 {
     .card {
       &:nth-child(#{$i}) {
-        animation-delay: $i * (.5s);
+        animation-delay: $i * (.8s);
       }
     }
   }
@@ -356,7 +420,6 @@ footer{
                 transition: width 300ms ease-in-out;
                 width: 0px;
                 height:70px;
-                /*visibility: collapse;*/
                 overflow: hidden;
                 border-radius: 0px 10px 10px 0px;
                 display: flex;
