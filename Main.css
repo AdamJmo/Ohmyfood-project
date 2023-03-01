@@ -269,8 +269,15 @@ footer a {
   margin: 2px 50px 25px 15px;
   font-family: shrikhand;
 }
+.menu .underline {
+  width: 40px;
+  padding-bottom: 3px;
+  background-color: #00e2d0;
+  margin-left: 15px;
+}
 .menu h3 {
   margin-left: 15px;
+  margin-bottom: 4px;
 }
 .menu .foods {
   background: white;
