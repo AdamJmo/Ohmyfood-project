@@ -1,6 +1,7 @@
 $primary-color:#9356dc;
 $secondary-color:#ff79da;
 $teritory-color:#00e2d0;
+$titles-font-fam:shrikhand;
 
 $shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
 $shadow2: 0 6px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.19);;
@@ -304,6 +305,7 @@ footer{
             display: flex;
             justify-content: space-between;
             margin: 2px 50px 25px 15px;
+            font-family:$titles-font-fam
             }
 
             h3{

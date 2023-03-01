@@ -267,6 +267,7 @@ footer a {
   display: flex;
   justify-content: space-between;
   margin: 2px 50px 25px 15px;
+  font-family: shrikhand;
 }
 .menu h3 {
   margin-left: 15px;
