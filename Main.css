@@ -1,4 +1,5 @@
-.display, #restaurants .card, #howcontainer, #area h4, #area, header, .btn {
+/*varibles*/
+.display, #restaurants .card, #howcontainer, #area h4, #area, header, .lds-dual-ring, .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,9 +25,6 @@
 }
 
 .lds-dual-ring {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100vw;
   height: 100vh;
 }
@@ -81,12 +79,6 @@ a {
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
-}
-
-.display, #restaurants .card, #howcontainer, #area h4, #area, header, .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 header {
@@ -295,13 +287,7 @@ h3 {
 .foods .okay {
   overflow: hidden;
 }
-.foods h3 {
-  margin: 5px 15px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.foods h5 {
+.foods h3, .foods h5 {
   margin: 5px 15px;
   white-space: nowrap;
   overflow: hidden;

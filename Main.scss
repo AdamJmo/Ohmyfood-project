@@ -1,3 +1,5 @@
+/*varibles*/
+
 $primary-color:#9356dc;
 $secondary-color:#ff79da;
 $teritory-color:#00e2d0;
@@ -32,6 +34,7 @@ $shadow2: 0 6px 0px 0 rgba(0, 0, 0, 0.6), 0 8px 8px 0 rgba(0, 0, 0, 0.6);;
     }
 }
 
+/*loading spinner cant get it to collaspe or have the body behind it */
 
 #ring-container{
     display: flex;
@@ -39,9 +42,7 @@ $shadow2: 0 6px 0px 0 rgba(0, 0, 0, 0.6), 0 8px 8px 0 rgba(0, 0, 0, 0.6);;
 }
 
 .lds-dual-ring {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   @extend .display;
     width: 100vw;
     height: 100vh;
 
@@ -103,11 +104,7 @@ body{ margin: 0px;
     font-family: 'Roboto', sans-serif;
 
 }
-.display{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 header {
   @extend .display;
@@ -341,18 +338,13 @@ footer{
             overflow: hidden;
             
         }
-             h3{
+             & h3, & h5{
             margin: 5px 15px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
             }
-            h5{
-            margin: 5px 15px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+         
         p{
            margin-bottom:-20px; 
            padding-right: 20px;       }
@@ -369,7 +361,7 @@ footer{
 
 
 
-
+/*animation for menu items loadind*/
 
   @for $i from 1 through 17 {
     .foods {
@@ -390,7 +382,7 @@ footer{
   }
   
 
-  
+  /*animations for restaurants loading*/
   .card{
     animation: .5s ease-in-out both fade-in;
   }
@@ -413,7 +405,7 @@ footer{
   }
 
 
-
+/*animation for the menu items hover over*/
     .foods{
         .pricecontainer{
             display: flex;
