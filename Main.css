@@ -19,6 +19,7 @@
   opacity: 0.8;
 }
 
+/*loading spinner cant get it to collaspe or have the body behind it */
 #ring-container {
   display: flex;
   position: absolute;
@@ -298,6 +299,7 @@ h3 {
   padding-right: 20px;
 }
 
+/*animation for menu items loadind*/
 .foods:nth-child(1) {
   animation-delay: 0.3s;
 }
@@ -376,6 +378,7 @@ h3 {
     transform: scale(1);
   }
 }
+/*animations for restaurants loading*/
 .card {
   animation: 0.5s ease-in-out both fade-in;
 }
@@ -406,6 +409,7 @@ h3 {
     transform: scale(1);
   }
 }
+/*animation for the menu items hover over*/
 .foods .pricecontainer {
   display: flex;
   align-items: center;
