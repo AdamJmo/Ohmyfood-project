@@ -4,7 +4,7 @@ $teritory-color:#00e2d0;
 $titles-font-fam:shrikhand;
 
 $shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
-$shadow2: 0 6px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.19);;
+$shadow2: 0 6px 0px 0 rgba(0, 0, 0, 0.6), 0 8px 8px 0 rgba(0, 0, 0, 0.6);;
 
 .display{
     display: flex;
@@ -24,8 +24,14 @@ $shadow2: 0 6px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.19);;
 }
 
 .btn{
-    @include button;
+    @include button; 
+    &:hover{
+        cursor: pointer;
+        box-shadow: $shadow2;
+            opacity: 0.8
+    }
 }
+
 
 #ring-container{
     display: flex;
@@ -139,14 +145,6 @@ header {
             text-align: center;
         }
 
-       .btn{
-        @include button;
-    }
-       
-        :hover{
-            box-shadow: $shadow2;
-            opacity: 0.8
-        }
     }
 
 #howcontainer{
@@ -299,9 +297,11 @@ footer{
         border-radius: 30px 30px 0px 0px;
         padding: 30px 0px 10px 13px;
         .btn{
-            margin: 50px 64px;
+            margin: 50px 64px;}
             
-        }
+
+            }
+        
             h1{
             display: flex;
             justify-content: space-between;
@@ -331,6 +331,7 @@ footer{
             justify-content: space-between;
             margin: 15px 0px;
             box-shadow: $shadow;
+            animation: .2s ease-in-out both fade-in;
         div{
             margin: auto 0px;
             
@@ -356,7 +357,7 @@ footer{
            margin-bottom:-20px; 
            padding-right: 20px;       }
     }
-}
+
 
 
         
@@ -369,10 +370,8 @@ footer{
 
 
 
-.foods{
-    animation: .2s ease-in-out both fade-in;
-  }
-  @for $i from 1 through 14 {
+
+  @for $i from 1 through 17 {
     .foods {
       &:nth-child(#{$i}) {
         animation-delay: $i * (.3s);

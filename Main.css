@@ -1,4 +1,4 @@
-.display, #restaurants .card, #howcontainer, #Explore .btn, #area h4, #area, header, .btn {
+.display, #restaurants .card, #howcontainer, #area h4, #area, header, .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,6 +11,11 @@
   border-radius: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-image: linear-gradient(#ff79da, #9356dc);
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 6px 0px 0 rgba(0, 0, 0, 0.6), 0 8px 8px 0 rgba(0, 0, 0, 0.6);
+  opacity: 0.8;
 }
 
 #ring-container {
@@ -78,7 +83,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.display, #restaurants .card, #howcontainer, #Explore .btn, #area h4, #area, header, .btn {
+.display, #restaurants .card, #howcontainer, #area h4, #area, header, .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,18 +122,6 @@ header a {
 #Explore p {
   padding: 0px 20px;
   text-align: center;
-}
-#Explore .btn {
-  width: 225px;
-  height: 50px;
-  color: white;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(#ff79da, #9356dc);
-}
-#Explore :hover {
-  box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.19);
-  opacity: 0.8;
 }
 
 #howcontainer {
@@ -264,23 +257,27 @@ footer a {
 .menu .btn {
   margin: 50px 64px;
 }
-.menu h1 {
+
+h1 {
   display: flex;
   justify-content: space-between;
   margin: 2px 50px 25px 15px;
   font-family: shrikhand;
 }
-.menu .underline {
+
+.underline {
   width: 40px;
   padding-bottom: 3px;
   background-color: #00e2d0;
   margin-left: 15px;
 }
-.menu h3 {
+
+h3 {
   margin-left: 15px;
   margin-bottom: 4px;
 }
-.menu .foods {
+
+.foods {
   background: white;
   height: 70px;
   width: 350px;
@@ -290,32 +287,29 @@ footer a {
   justify-content: space-between;
   margin: 15px 0px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation: 0.2s ease-in-out both fade-in;
 }
-.menu .foods div {
+.foods div {
   margin: auto 0px;
 }
-.menu .foods .okay {
+.foods .okay {
   overflow: hidden;
 }
-.menu .foods h3 {
+.foods h3 {
   margin: 5px 15px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu .foods h5 {
+.foods h5 {
   margin: 5px 15px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu .foods p {
+.foods p {
   margin-bottom: -20px;
   padding-right: 20px;
-}
-
-.foods {
-  animation: 0.2s ease-in-out both fade-in;
 }
 
 .foods:nth-child(1) {
@@ -372,6 +366,18 @@ footer a {
 
 .foods:nth-child(14) {
   animation-delay: 4.2s;
+}
+
+.foods:nth-child(15) {
+  animation-delay: 4.5s;
+}
+
+.foods:nth-child(16) {
+  animation-delay: 4.8s;
+}
+
+.foods:nth-child(17) {
+  animation-delay: 5.1s;
 }
 
 @keyframes fade-in {
