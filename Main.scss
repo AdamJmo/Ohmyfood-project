@@ -417,7 +417,7 @@ footer{
             .tick{
                 
                 background: $teritory-color;
-                transition: width 300ms ease-in-out;
+                transition: width 600ms ease-in-out;
                 width: 0px;
                 height:70px;
                 overflow: hidden;
@@ -428,7 +428,7 @@ footer{
             }
             i{
                 transform: rotate(-360deg);
-                transition: transform 300ms ease-in-out;
+                transition: transform 600ms ease-in-out;
                 overflow: hidden;
                 padding-left: 5px;
                 filter: invert(100%);
