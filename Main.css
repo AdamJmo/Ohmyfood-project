@@ -128,6 +128,7 @@ header a {
 }
 #Explore :hover {
   box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.8;
 }
 
 #howcontainer {
@@ -412,12 +413,6 @@ footer a {
     opacity: 1;
     transform: scale(1);
   }
-}
-.foods {
-  background: red;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .foods .pricecontainer {
   display: flex;

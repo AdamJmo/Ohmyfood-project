@@ -145,6 +145,7 @@ header {
        
         :hover{
             box-shadow: $shadow2;
+            opacity: 0.8
         }
     }
 
@@ -415,10 +416,6 @@ footer{
 
 
     .foods{
-        background:red;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
         .pricecontainer{
             display: flex;
             align-items: center;
