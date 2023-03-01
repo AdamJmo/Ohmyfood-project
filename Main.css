@@ -1,5 +1,5 @@
 /*varibles*/
-.display, #restaurants .card, #howcontainer, #area h4, #area, header, .lds-dual-ring, .btn {
+.display, #restaurants .card, #howcontainer, #area h4, #area, header, .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,29 +20,23 @@
 }
 
 /*loading spinner cant get it to collaspe or have the body behind it */
-#ring-container {
-  display: flex;
-  position: absolute;
-}
-
-.lds-dual-ring {
-  width: 100vw;
-  height: 100vh;
-}
-
 .lds-dual-ring:after {
   content: " ";
   position: absolute;
-  width: 64px;
-  height: 64px;
+  width: 100px;
+  height: 100px;
   margin: auto;
   border-radius: 50%;
   border: 6px solid #fff;
   border-color: #9356dc #ff79da;
   animation: lds-dual-ring 8s infinite;
   animation-iteration-count: 1;
+  left: 50%;
+  margin-left: -50px;
+  top: 50%;
+  margin-top: -50px;
   visibility: hidden;
-  z-index: 0;
+  z-index: 1;
 }
 
 @keyframes lds-dual-ring {
@@ -53,6 +47,21 @@
   }
   100% {
     transform: rotate(3600deg);
+  }
+}
+#full_page {
+  animation: ease-in full_page 8s;
+  transform: scale(1);
+}
+
+@keyframes full_page {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 .new-item {

@@ -37,32 +37,25 @@ $shadow2: 0 6px 0px 0 rgba(0, 0, 0, 0.6), 0 8px 8px 0 rgba(0, 0, 0, 0.6);;
 
 /*loading spinner cant get it to collaspe or have the body behind it */
 
-#ring-container{
-    display: flex;
-    position: absolute;
-}
-
-.lds-dual-ring {
-   @extend .display;
-    width: 100vw;
-    height: 100vh;
 
 
-  
-  }
   .lds-dual-ring:after {
     content: " ";
     position: absolute;
-    width: 64px;
-    height: 64px;
+    width: 100px;
+    height: 100px;
     margin: auto;
     border-radius: 50%;
     border: 6px solid #fff;
     border-color: $primary-color $secondary-color;
     animation: lds-dual-ring 8s infinite ;
     animation-iteration-count: 1;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
     visibility: hidden;
-    z-index: 0;
+    z-index: 1;
     
   }
   @keyframes lds-dual-ring {
@@ -73,11 +66,23 @@ $shadow2: 0 6px 0px 0 rgba(0, 0, 0, 0.6), 0 8px 8px 0 rgba(0, 0, 0, 0.6);;
     }
     100% {
       transform: rotate(3600deg);
-      
-      
-     
-    
-  }}
+      }}
+
+    #full_page{
+        animation: ease-in full_page 8s;
+        transform: scale(1);
+    }
+
+    @keyframes full_page {
+        0% {
+          opacity: 0;
+          transform: scale(1);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
 
 .new-item {
     position: absolute;
