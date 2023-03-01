@@ -288,13 +288,13 @@ h3 {
 .foods .okay {
   overflow: hidden;
 }
-.foods h3, .foods h5 {
+.foods h3, .foods p {
   margin: 5px 15px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.foods p {
+.foods .money {
   margin-bottom: -20px;
   padding-right: 20px;
 }

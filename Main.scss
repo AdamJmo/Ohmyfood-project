@@ -8,6 +8,7 @@ $titles-font-fam:shrikhand;
 $shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
 $shadow2: 0 6px 0px 0 rgba(0, 0, 0, 0.6), 0 8px 8px 0 rgba(0, 0, 0, 0.6);;
 
+
 .display{
     display: flex;
     justify-content: center;
@@ -23,7 +24,7 @@ $shadow2: 0 6px 0px 0 rgba(0, 0, 0, 0.6), 0 8px 8px 0 rgba(0, 0, 0, 0.6);;
     box-shadow: $shadow;
     background-image: linear-gradient($secondary-color,$primary-color);
 
-}
+} 
 
 .btn{
     @include button; 
@@ -303,7 +304,7 @@ footer{
             display: flex;
             justify-content: space-between;
             margin: 2px 50px 25px 15px;
-            font-family:$titles-font-fam
+            font-family:$titles-font-fam;
             }
             .underline{
                 width: 40px;
@@ -338,17 +339,19 @@ footer{
             overflow: hidden;
             
         }
-             & h3, & h5{
+             & h3, & p{
             margin: 5px 15px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
             }
+           
          
-        p{
+        .money{
            margin-bottom:-20px; 
            padding-right: 20px;       }
     }
+    
 
 
 
