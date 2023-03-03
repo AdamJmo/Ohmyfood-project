@@ -169,6 +169,11 @@ header {
         background: #f2f2f2;
         border-radius: 20px;
         box-shadow:$shadow;
+        &:hover{
+            i{
+                color: $primary-color;
+            }
+        }
         a{
             display:flex;
             align-items:center;
@@ -179,10 +184,17 @@ header {
                 padding:0px 5px;
                 margin: 0px 10px 0px -40px;
             }
+            i{
+                margin-left: 10px;
+                opacity: 50%;
+                font-size: 18px;
+               
+            }
             p{
-                margin-left: 10px;}
+                margin-left: 20px;}
             }
         }
+       
     }
 
 #restaurants{
@@ -293,11 +305,7 @@ footer{
         width:100px;
         
     }
-    /*a{
-        height:26px;
-        margin-left: 20px;
-        filter: invert(100%);
-    }*/
+   
 
 }
 
