@@ -126,7 +126,7 @@ header {
 
 #area{
     @extend.display;
-    background: lightgray;
+    background: #e8e8e8;
        h4{
         @extend.display;
         margin-left: 10px;
@@ -137,7 +137,7 @@ header {
 #Explore{
     display: flex;
     align-items: center;
-    background: rgba(238, 235, 235, 0.852);
+    background: #f2f2f2;;
     height: 285px;
     flex-direction: column;
         h1{
@@ -177,10 +177,7 @@ header {
                 background: $primary-color;
                 border-radius: 20px 20px;
                 padding:0px 5px;
-                margin-right: 20px;
-                left: 13px;
-                display: block;
-                position: absolute;
+                margin: 0px 10px 0px -40px;
             }
             p{
                 margin-left: 10px;}
@@ -194,10 +191,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 100px;
     
     h2{
-        margin:60px 0px 20px 20px;
+        margin: 50px 195px 20px 0px;
     }
 
 
@@ -277,19 +275,29 @@ footer{
    
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding-top: 30px;
+    align-items: center;
+    padding-top: 20px;
+
+    ul{
+        margin-left:-200px;
+    }
+
+& li{
+    list-style-type: none;
+    line-height: 10px;
+        filter: invert(100%);
+}
+
     img{
         height:20px;
         width:100px;
-        margin-left: 20px;
-        filter: invert(100%);
+        
     }
-    a{
+    /*a{
         height:26px;
         margin-left: 20px;
         filter: invert(100%);
-    }
+    }*/
 
 }
 
@@ -359,6 +367,13 @@ footer{
             overflow: hidden;
             text-overflow: ellipsis;
             }
+            h3{
+                font-weight: 400;
+            }
+            p{
+                font-weight: 100;
+            }
+            
            
          
         .money{

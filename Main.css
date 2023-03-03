@@ -104,7 +104,7 @@ header a {
 }
 
 #area {
-  background: lightgray;
+  background: #e8e8e8;
 }
 #area h4 {
   margin-left: 10px;
@@ -114,7 +114,7 @@ header a {
 #Explore {
   display: flex;
   align-items: center;
-  background: rgba(238, 235, 235, 0.852);
+  background: #f2f2f2;
   height: 285px;
   flex-direction: column;
 }
@@ -154,10 +154,7 @@ header a {
   background: #9356dc;
   border-radius: 20px 20px;
   padding: 0px 5px;
-  margin-right: 20px;
-  left: 13px;
-  display: block;
-  position: absolute;
+  margin: 0px 10px 0px -40px;
 }
 #howcontainer div a p {
   margin-left: 10px;
@@ -169,10 +166,11 @@ header a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 100px;
 }
 #restaurants h2 {
-  margin: 60px 0px 20px 20px;
+  margin: 50px 195px 20px 0px;
 }
 #restaurants .card {
   width: 335px;
@@ -235,19 +233,25 @@ footer {
   height: 195px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-top: 30px;
+  align-items: center;
+  padding-top: 20px;
+  /*a{
+      height:26px;
+      margin-left: 20px;
+      filter: invert(100%);
+  }*/
+}
+footer ul {
+  margin-left: -200px;
+}
+footer li {
+  list-style-type: none;
+  line-height: 10px;
+  filter: invert(100%);
 }
 footer img {
   height: 20px;
   width: 100px;
-  margin-left: 20px;
-  filter: invert(100%);
-}
-footer a {
-  height: 26px;
-  margin-left: 20px;
-  filter: invert(100%);
 }
 
 .cover {
@@ -312,6 +316,12 @@ h3 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.foods h3 {
+  font-weight: 400;
+}
+.foods p {
+  font-weight: 100;
 }
 .foods .money {
   margin-bottom: -20px;
