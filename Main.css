@@ -336,6 +336,7 @@ h3 {
 .foods .money {
   margin-bottom: -20px;
   padding-right: 20px;
+  font-weight: bold;
 }
 
 /*animation for menu items loadind*/
