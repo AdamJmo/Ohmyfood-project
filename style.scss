@@ -20,8 +20,8 @@ $shadow2: 0 6px 0px 0 rgba(0, 0, 0, 0.6), 0 8px 8px 0 rgba(0, 0, 0, 0.6);;
     width: 225px;
     height: 50px;
     color: white;
+    border-width: 0px;
     border-radius: 30px;
-    /*box-shadow: $shadow;*/
     background-image: linear-gradient($secondary-color,$primary-color);
 
 } 
