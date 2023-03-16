@@ -48,7 +48,7 @@ $shadow2: 0 6px 0px 0 rgba(0, 0, 0, 0.6), 0 8px 8px 0 rgba(0, 0, 0, 0.6);;
     border-radius: 50%;
     border: 6px solid #fff;
     border-color: $primary-color $secondary-color;
-    animation: lds-dual-ring 8s infinite ;
+    animation: lds-dual-ring 3s infinite ;
     animation-iteration-count: 1;
     left: 50%;
     margin-left: -50px;
@@ -69,7 +69,7 @@ $shadow2: 0 6px 0px 0 rgba(0, 0, 0, 0.6), 0 8px 8px 0 rgba(0, 0, 0, 0.6);;
       }}
 
     #full_page{
-        animation: ease-in full_page 8s;
+        animation: ease-in full_page 3s;
         transform: scale(1);
     }
 
@@ -138,7 +138,7 @@ header {
     display: flex;
     align-items: center;
     background: #f2f2f2;;
-    height: 285px;
+    height: 250px;
     flex-direction: column;
         h1{
              padding-top: 20px;}
@@ -148,6 +148,7 @@ header {
             text-align: center;
             font-weight: 200;
             font-size: 18px;
+            margin-bottom: 40px
         }
 
     }
