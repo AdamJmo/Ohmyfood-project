@@ -29,7 +29,7 @@
   border-radius: 50%;
   border: 6px solid #fff;
   border-color: #9356dc #ff79da;
-  animation: lds-dual-ring 8s infinite;
+  animation: lds-dual-ring 3s infinite;
   animation-iteration-count: 1;
   left: 50%;
   margin-left: -50px;
@@ -50,7 +50,7 @@
   }
 }
 #full_page {
-  animation: ease-in full_page 8s;
+  animation: ease-in full_page 3s;
   transform: scale(1);
 }
 
@@ -115,7 +115,7 @@ header a {
   display: flex;
   align-items: center;
   background: #f2f2f2;
-  height: 285px;
+  height: 250px;
   flex-direction: column;
 }
 #Explore h1 {
@@ -126,6 +126,7 @@ header a {
   text-align: center;
   font-weight: 200;
   font-size: 18px;
+  margin-bottom: 40px;
 }
 
 #howcontainer {
